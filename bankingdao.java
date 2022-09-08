@@ -100,7 +100,7 @@ public class bankingdao {
 
     public int deposit(int cid, int amount)throws Exception{
 		
-	  //Depositing
+	        //Depositing
 		String query = "select * from banking where cid="+cid;
 		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery(query);
